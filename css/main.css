@@ -177,14 +177,31 @@ h2 {
 }
 
 #green-block {
+    /*
     color: var(--white-color);
-    background-color: var(--green-color);
+    background-color: var(--orang-color); 
+    */
     border-radius: 40px;
     margin-left: 2px;
     margin-right: 2px;
     margin-top: 60px;
     margin-bottom: -140px;
     padding-bottom: 120px;
+}
+
+#green-txt {
+    
+    color: var(--white-color);
+    background-color: var(--green-color); 
+    
+    border-radius: 40px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 20px;
+    
+    margin-top: 60px;
+    /*margin-bottom: -140px;
+    padding-bottom: 120px; */
 }
 
 .green_imgMoveUp {
