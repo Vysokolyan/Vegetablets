@@ -35,8 +35,22 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary whiteGradient">
       <div class="container-xl">
         <a class="navbar-brand" href="#home">
-          <img src="images/0/Logo.svg" alt="VEGGNESS">
+          <img src="images/0/Logo.svg" height="50px" alt="VEGGNESS">
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a id="lnk1" class="nav-link" href="#home">Home</a>
+            <a id="lnk3" class="nav-link" href="#stages">Manufacturing</a>
+            <a id="lnk5" class="nav-link" href="#blog">Blog</a>
+          </div>
+          <div class="navbar-nav ms-auto">
+            <a id="lnk6" href="" class="btn btn-mainMenu" data-bs-toggle="modal" data-bs-target="#qorder">Order</a>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -436,7 +450,7 @@
     </div>
 
 
-    <form target="_blank" action="af9beac872eb39ba2976e76bbcccce14" method="POST">
+    <form target="_blank" action="https://formsubmit.co/af9beac872eb39ba2976e76bbcccce14" method="POST">
       <div class="row pt-2">
         <div class="col-lg-6 col-12 text-center">
           <picture>
@@ -490,6 +504,15 @@
       <p class="text-center">Copyright&nbsp;&copy;&nbsp;2023&nbsp;BRIX&nbsp;Templates |
         All&nbsp;Rights&nbsp;Reserved</p>
     </div>
+
+    
+    <div id="footerOpen"></div>
+    <footer class="text-center fixed-bottom">
+      <div id="footerButt" class="container-fluid">
+        <a href="" class="btn btn-mainMenu" data-bs-toggle="modal" data-bs-target="#qorder">Order</a>
+      </div>
+      <div id="footerClose"></div>
+    </footer>
 
     <div class="modal fade" id="blog_1" tabindex="-1" aria-labelledby="blog_1_Label" aria-hidden="true">
       <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
@@ -592,6 +615,43 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="qorder" tabindex="-1" aria-labelledby="qorder_Label" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header whiteGradient">
+            <p class="size_h2 pt-2">Order</p>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form target="_blank" action="https://formsubmit.co/af9beac872eb39ba2976e76bbcccce14" method="POST">
+              <div class="row">
+                <div class="col-lg-6 col-12 text-center">
+                  <picture>
+                    <source media="(min-width:576px)" srcset="images/12_orderModal/box_on_blue_bg.png">
+                    <img src="images/12_orderModal/box_on_blue_bg_360.png" class="img-fluid rounded-4" alt="">
+                  </picture>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <p class="size_h2 pb-1">Leave your contacts for pre-order now and earn a 10% discount</p>
+                  <p class="mt-3">Name</p>
+                  <input type="text" name="name" class="form-control" placeholder="Name">
+                  <p class="mt-3">Email</p>
+                  <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  <p class="mt-3">Leave us message</p>
+                  <textarea placeholder="Your Message" class="form-control" name="message" rows="4" required></textarea>
+                  <input type="hidden" name="_next" value="https://veggness.com/pages/thanks.html">
+                  <input type="hidden" name="_captcha" value="false">
+                  <button type="submit" href="" class="btn btn-orangLight m-3" data-bs-dismiss="modal"
+                    aria-label="Close">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/custom.js"></script>
